@@ -3,13 +3,35 @@
   "version": "1.0.0",
   "description": "[![Actions Status](https://github.com/Smooth228105/frontend-project-46/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/Smooth228105/frontend-project-46/actions)",
   "main": "gendiff.js",
-  "dependencies": {
-    "commander": "^12.1.0"
-  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "npx jest"
   },
   "author": "",
-  "license": "ISC"
-  
+  "license": "ISC",
+  "type": "module",
+  "bin": {
+    "gendiff": "bin/gendiff.js"
+  },
+  "dependencies": {
+    "@jest/globals": "^29.7.0",
+    "commander": "^12.0.0",
+    "fs": "^0.0.1-security",
+    "jest": "^29.7.0",
+    "js-yaml": "^4.1.0",
+    "lodash": "^4.17.21"
+  },
+  "devDependencies": {
+    "@eslint/create-config": "^1.0.0",
+    "@eslint/eslintrc": "^3.2.0",
+    "@eslint/js": "^9.16.0",
+    "eslint": "^8.57.1",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.31.0",
+    "eslint-plugin-jsx-a11y": "^6.10.2",
+    "eslint-plugin-react": "^7.37.2",
+    "eslint-plugin-react-hooks": "^4.6.2",
+    "globals": "^15.13.0",
+    "simple-git-hooks": "^2.11.1"
+  }
 }

@@ -14,7 +14,7 @@ export const mergeDiffKeys = (diff) => {
   const merged = _.union(
     Object.keys(diff.added),
     Object.keys(diff.removed),
-    Object.keys(diff.common)
+    Object.keys(diff.common),
   );
   return _.sortBy(merged);
 };

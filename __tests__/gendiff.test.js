@@ -9,7 +9,7 @@ import {
   mergeKeys, indent, mergeDiffKeys, createDiff,
 } from '../src/utils.js';
 import genDiff from '../src/index.js';
-import { parseJSONData, parseYAMLData, parseData } from '../src/parsers.js';
+import { parseData, parseJSONData, parseYAMLData } from '../src/parsers.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);

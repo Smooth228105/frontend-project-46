@@ -6,7 +6,7 @@ const complexValue = (value) => {
   return typeof value === 'string' ? `'${value}'` : `${value}`;
 };
 
-export const plain = (diff, path = '') => {
+const plain = (diff, path = '') => {
   const keys = mergeDiffKeys(diff);
   return keys.reduce((result, key) => {
     const currentPath = `${path}${path ? '.' : ''}${key}`;
@@ -31,3 +31,5 @@ export const plain = (diff, path = '') => {
     return result;
   }, '');
 };
+
+export default { plain };

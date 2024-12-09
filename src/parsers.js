@@ -4,8 +4,8 @@ import * as path from 'node:path';
 
 const readFile = (pathToFile) => fs.readFileSync(pathToFile, 'utf-8');
 
-const parseJSONData = (data) => JSON.parse(data);
-const parseYAMLData = (data) => yaml.load(data);
+export const parseJSONData = (data) => JSON.parse(data);
+export const parseYAMLData = (data) => yaml.load(data);
 
 const getParser = (extension) => {
   switch (extension.toLowerCase()) {
